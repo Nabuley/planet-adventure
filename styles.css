@@ -1,0 +1,320 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d0d;
+    color: #ffffff;
+}
+
+header {
+    background-color: #1a1a1a;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+#destinations input[type="text"] {
+    width: 80%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    border: 1px solid #333333;
+    background-color: #222222;
+    color: #ffffff;
+}
+
+#destinations .destination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
+    padding: 1rem;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    width: 80%;
+    background-color: #222222;
+    color: #ffffff;
+    text-decoration: none;
+    height: 220px;
+}
+
+.planet {
+    border-radius: 50%;
+    position: relative;
+    margin-right: 5rem;
+}
+
+.mercury {
+    width: 40px;
+    height: 40px;
+    background: radial-gradient(circle, #8c8c8c 0%, #4d4d4d 100%);
+}
+
+.mercury::before {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+}
+
+.venus {
+    width: 70px;
+    height: 70px;
+    background: radial-gradient(circle, #e6e6a6 0%, #b3b38c 100%);
+}
+
+.venus::before {
+    content: "";
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    width: 15px;
+    height: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.earth {
+    width: 80px;
+    height: 80px;
+    background: radial-gradient(circle, #4d8cf5 0%, #0033cc 60%, #006633 100%);
+}
+
+.earth::before, .earth::after, .earth .continent {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background: #006633;
+}
+
+.earth::before {
+    width: 15px;
+    height: 20px;
+    top: 20%;
+    left: 30%;
+    transform: rotate(-20deg);
+}
+
+.earth::after {
+    width: 20px;
+    height: 15px;
+    top: 60%;
+    left: 50%;
+    transform: rotate(20deg);
+}
+
+.continent {
+    position: absolute;
+    background-color: #006633;
+    border-radius: 50%;
+}
+
+.continent1 {
+    width: 25px;
+    height: 20px;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.continent2 {
+    width: 15px;
+    height: 25px;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.continent3 {
+    width: 20px;
+    height: 30px;
+    top: 70%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+
+.mars {
+    width: 60px;
+    height: 60px;
+    background: radial-gradient(circle, #ff6f61 0%, #b22222 100%);
+}
+
+.mars::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+}
+
+.jupiter {
+    width: 140px;
+    height: 140px;
+    background: linear-gradient(180deg, #fbc02d 10%, #ff8f00 20%, #fbc02d 30%, #ff8f00 40%, #fbc02d 50%, #ff8f00 60%, #fbc02d 70%, #ff8f00 80%, #fbc02d 90%);
+}
+
+.jupiter::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    width: 30px;
+    height: 25px;
+    background: rgba(183, 28, 28, 0.6);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.saturn {
+    width: 120px;
+    height: 120px;
+    background: radial-gradient(circle, #fdd835 0%, #ffeb3b 100%);
+}
+
+.saturn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 220px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) rotate(20deg);
+}
+
+.saturn::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 185px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) rotate(20deg);
+}
+
+.uranus {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, #a3d5d3 0%, #5cb9b5 100%);
+}
+
+.uranus::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 180px;
+    height: 25px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) rotate(60deg);
+}
+
+.uranus::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 35px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) rotate(60deg);
+}
+
+.neptune {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, #4b89dc 0%, #1c3b99 100%);
+}
+
+.neptune::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 180px;
+    height: 25px;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.neptune::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 35px;
+    background: rgba(255, 255, 255, 0.17);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.info {
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin: 0.5rem 0 0.2rem 0;
+}
+
+form input, form textarea {
+    width: 50%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    border: 1px solid #333333;
+}
+
+form button {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
